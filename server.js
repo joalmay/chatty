@@ -1,6 +1,6 @@
 
 // Text for the messages
-var messages = [{message:'hello'}];
+var messages = [{message:'hello'}, {message:'hello2'}];
 var port = 9500;
 
 //Create the server
