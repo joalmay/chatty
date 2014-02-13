@@ -1,12 +1,18 @@
+<div ng-controller="MessageCtrl">
+
 <div class="header">
   <h3 class="text-muted">Welcome to Awesome Chat!!</h3>
 </div>
 
 <h4>Latest Chats:</h4>
-<div class="jumbotron" ng-controller="MessageCtrl">
+<div class="jumbotron">
 	<div ng-repeat="m in messages">
 		You said: "{{m.message}}"
 	</div>
-   
 </div>
-<input type="text" name="ChatText" placeholder="Type your text here">
+  <form ng-submit="addMessage()">
+<input placeholder="Type your text here" ng-model="newMessageText">
+</form>
+</div>
+
+
